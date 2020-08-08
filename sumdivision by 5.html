@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Назва задачі</title>
+    <script>
+        //Писати код тут
+        function sumDivision(a, b) {
+
+            let s = 0
+            for (let i = a; i <= b; i++) {
+                if (i % 5 == 0) {
+                    s = i + s
+                    console.log("ітерація " + i + " сума = " + s)
+                }
+
+            }
+            return s
+        }
+        let a = +prompt("перше число");
+        let b = +prompt("друге число")
+        console.log(sumDivision(a, b))
+    </script>
+</head>
+
+<body>
+    <h2>Назва задачі</h2>
+    Напишите функцию, которая принимает на вход два числа,
+    и возвращает сумму всех чисел между ними,
+    которые делятся на 5 или на одно из этих чисел.
+
+
+
+</body>
+
+</html>
