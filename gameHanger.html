@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>ШИБЕНИЦЯ</title>
+    <script>
+        // var name = prompt("What's you name?");
+        // console.log("Hello! " + name);
+        // var likesCats = confirm("Do you like cats?");
+        // if(likesCats){
+        //     console.log("You're cool cat!");
+        // }else {
+        //     console.log("Yeah, that's fine. You're still cool!")
+        // }
+        // alert("JavaScript is awesome!")
+        ////////////////GAME HANGER///////////////////////
+        var words = [
+            "javascript",
+            "monkey",
+            "amazing",
+            "pancake"
+        ];
+        var word = words[Math.floor(Math.random() * words.length)];
+        var answerArray = [];
+        for (var i = 0; i < word.length; i++) {
+            answerArray[i] = "_";
+        };
+        var remainingLetters = word.length;
+        while (remainingLetters > 0) {
+            //показуе гравцю прогрес
+            alert(answerArray.join(" "));
+            var guess = prompt("Gues a letter, or click Cancel to stop playning.");
+            if (guess === null) {
+                break;
+            } else if (guess.length !== 1) {
+                alert("Please enter a single letter.")
+            } else {
+                //оновл. стан гри зф допомогою змінного параметра guess
+                for (var j = 0; j < word.length; j++) {
+                    if (word[i] === guess) {
+                        answerArray[j] = guess;
+                        remainingLetters--;
+                    }
+                }
+            }
+        }
+        alert(answerArray.join(" "));
+        alert("Good job! The ansver was" + word)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <h2>Назва задачі</h2>
+</body>
+
+</html>
