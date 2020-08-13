@@ -4,6 +4,11 @@
     <title>Назва задачі</title>
     <script>
         //Писати код тут
+
+        // var stringToNumber = function (str) {
+        //     return parseInt(str);
+        // }   // або
+
         var stringToNumber = function (str) {
             // console.log(a)
             // console.log(a["9"])
@@ -11,7 +16,7 @@
             let m = 1
             for (let i = str.length - 1; i >= 0; i--) {
                 let char = str[i]
-                if (char == "-"){
+                if (char == "-") {
                     console.log("- знайшовся")
                     result = result * -1  // result = -result
                     break
@@ -35,7 +40,7 @@
         stringToNumber("1234") == 1234
         stringToNumber("605" ) == 605
         stringToNumber("1405") == 1405
-        stringToNumber("-7"  ) == -7
+        stringToNumber("-7" ) == -7
     </h2>
 </body>
 
