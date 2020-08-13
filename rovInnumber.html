@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Назва задачі</title>
+    <script>
+        //Писати код тут
+        var stringToNumber = function (str) {
+            // console.log(a)
+            // console.log(a["9"])
+            let result = 0
+            let m = 1
+            for (let i = str.length - 1; i >= 0; i--) {
+                let char = str[i]
+                if (char == "-"){
+                    console.log("- знайшовся")
+                    result = result * -1  // result = -result
+                    break
+                }
+                console.log(char)
+                let n = char * m
+                console.log("m=", m)
+                console.log(n)
+                result = result + n
+                m = m * 10
+            }
+            // put your code here
+            return result;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2>Нам потрібна функція, яка може перетворити рядок в число.
+        stringToNumber("1234") == 1234
+        stringToNumber("605" ) == 605
+        stringToNumber("1405") == 1405
+        stringToNumber("-7"  ) == -7
+    </h2>
+</body>
+
+</html>
