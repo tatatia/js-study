@@ -2,53 +2,41 @@
 
 <head>
     <title>Назва задачі</title>
-    <script>
-        function arr(n) {
-            var array = []
-            let i = 0
-            while (i <= n - 1) {
-                array[i] = i
-                i++
-            }
-            return array
-        }
-        // або 
+    <script> 
+    
+    function isDivideBy(number, a, b) {
+  if(number % a==0 && number % b == 0){
+    return true
+  }else{
+return false
+  }
 
-        function arr2(n) {
-            var array = []
-            for (let i = 0; i <= n - 1; i++) {
-                array[i] = i
-            }
-
-            return array
-        }
+}
+або
+const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
+ або
+ function isDivideBy(number, a, b) {
+  return [a, b].every(i => number % i === 0)
+}   
 
 
-        function getAverage(marks) {//[3,2,4]
-            let sum = 0
-            for (let i = 0; i < marks.length; i++) {//робігтися по всіх елементах массиву marks
-                sum = sum + marks[i]//взяти елемент з індексом і з массиву marks.потім додати до sum і результат записати в sum
-                console.log(sum)
-            }
-
-            return Math.floor(sum / marks.length)
-        }
+        
     </script>
 </head>
 
 <body>
-    <h2> 1 Це кінець навчального року, доленосний момент вашого звіту про школу.
-        Середні значення повинні бути розраховані. Всі студенти приходять до вас
-        і пропонують вам порахувати їх середнє значення. Легко! Вам просто потрібно
-        написати сценарій.
-        Повернути середнє значення даного масиву, округленого вниз,
-        до його найближчого цілого числа.
-        Масив ніколи не буде порожнім.
-
-        2 Ми хочемо масив, але не будь-який старий масив, масив із вмістом!
-        Напишіть функцію, яка створює масив із числами 0до N-1нього.
-        Наприклад, наступний код призведе до масиву, що містить числа 0до 4:
-        arr(5) // => [0,1,2,3,4]</h2>
+    <h2> 1 Ваше завдання - створити functionisDivideBy (або is_divide_by),
+        щоб перевірити, чи ділиться ціле число на кожен з двох аргументів.
+        Кілька випадків:
+        (-12, 2, -6)  ->  true
+        (-12, 2, -5)  ->  false
+        
+        (45, 1, 6)    ->  false
+        (45, 5, 15)   ->  true
+        
+        (4, 1, 4)     ->  true
+        (15, -5, 3)   ->  true
+        https://www.codewars.com/kata/5a2b703dc5e2845c0900005a/train/javascript</h2>
 </body>
 
 </html>
