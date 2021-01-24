@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Playing with the Dom</title>
+
+</head>
+
+<body>
+    <h1 id="main-heading">HELLO WORLD!</h1>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script>
+        //var newHeadingText = prompt("Please provide a new heading:");
+        $("h1").fadeOut(3000);
+        $("h1").slideUp(2000).slideDown(2000)
+        $("h1").text("This will fade out").fadeOut(3000);
+        $("h1").fadeOut(3000).fadeIn(2000);
+
+        //$("#main-heading").text(newHeadingText);
+        //$("body").append("<p>This is a new paragraph</p>")
+        $("h1").fadeOut(1000);
+        $("h1").fadeIn(1000)
+        //for (var i = 0; i < 3; i++) {
+            //var hobby = prompt("Tell me of your hobbies!");
+            //$("body").append("<p>" + hobby + "</p>")
+        //}
+    </script>
+</body>
+
+</html>

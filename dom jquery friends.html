@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>My friends</title>
+</head>
+
+<body>
+     <h1 id="maine-heading">Hello</h1>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script>
+        var myFriends = ["r1","r3","r5"];
+        for (var i = 0; i < myFriends.length; i++) {
+            var friend = myFriends[i]
+            var d = i * 1000
+            $("body").append("<p id = '" + friend + "'>" + friend + "</p>")
+            $("#"+friend).hide().delay(d).fadeIn(1000)
+            //$("h1").hide(3000).fadeIn(3000);
+            $("body").append("<p> smells! </p>");
+
+            //$("#main-heading").fadeOut(5000).fadeIn(5000)
+
+        }
+        $("h1").hide(3000)
+        $("h1").text("My friends").fadeIn(3000);
+         //{
+            //for(var j = 0; j < length; j++){
+              // var headingElement = document.getElementById("main-heading");
+            //console.log(headingElement.innerText)
+               // $("#main-heading").fadeOut(5000).fadeIn(5000)
+            //}
+        //}
+
+    </script>
+
+</body>
+
+</html>
